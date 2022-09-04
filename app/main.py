@@ -13,12 +13,12 @@ app = FastAPI()
 origins = ["*"]
 
 # allows for requests from other domains to talk with our API
-app.add_moddleware(
+app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
 app.include_router(post.router)  # request go es to post and looks for match
