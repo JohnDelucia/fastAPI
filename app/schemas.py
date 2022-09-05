@@ -19,7 +19,7 @@ class PostCreate(PostBase):  # can alter this if we only want user to update one
 
 class UserOut(BaseModel):
     id: int
-    email: str
+    email: EmailStr
     created_at: datetime
 
     class Config:
