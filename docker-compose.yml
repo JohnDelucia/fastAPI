@@ -1,0 +1,33 @@
+version: "3"
+services: 
+    api:
+        build: .
+        depends_on:
+            - postgres
+        ports: 
+            - 8000:8000
+        environment:
+            - DATABASE_HOSTNAME=postgres
+            - DATABASE_PORT=5432
+            - DATABASE_PASSWORD=Mally123
+            - DATABASE_NAME=fastapi
+            - DATABASE_USERNAME=postgres
+            - SECRET_KEY=09d25hfu293hf349hf2983hf9h43h9f8h298h4f98h498hw
+            - ALGORITHM=HS256
+            - ACCESS_TOKEN_EXPIRE_MINUTES=30
+        
+    postgres:
+      image: postgres
+      environment:
+          - POSTGRES_PASSWORD=Mally123
+          - POSTGRES_DB=fastapi
+
+      volumes:
+          - postgres-db=/var/lib/postgresql/data
+          
+volumes:
+    postgres-db:
+
+
+          
+            
