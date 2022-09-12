@@ -2,7 +2,7 @@
 
 This program is a social media API in Python which uses FastAPI. The front end shown below is provided by FastAPI. 
 This API has nine seperate functions under four categories: Users, Authentication, Posts, Vote.
-More than 30 unite and integration tests are used to ensure funtionality of this API.
+More than 30 unit and integration tests are used to ensure funtionality of this API.
 
 **Users:** (1) Create a user by giving an email and password. (2) Look up a user by their user ID, returns email, id, and 'created at' time stamp.
 
@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/96018567/189568812-cc39c992-b284-4652-
 
 https://user-images.githubusercontent.com/96018567/189569618-834752f6-e809-450c-8291-87facf22292c.mov
 
-**Posts:** (1) Get all posts on the platform will return post content, title, id, and 'created at' time. (2) Get one post on the platform by giving post ID. 
+**Posts:** (1) Get all posts on platform, will return post content, title, id, and 'created at' time.(2) Get one post on the platform by giving post ID. 
 (3) Create post by providing title and content. (4) Update post by providing post ID, and then title and/or content. (5) Delete post by providing post ID.
 Options (3), (4), and (5) require a user to be signed in to make these requests. 
 
