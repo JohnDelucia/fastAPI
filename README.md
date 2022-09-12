@@ -1,6 +1,6 @@
 # Social Media API
 
-This program is a social media API in Python which uses FastAPI. The front end shown below is provided by FastAPI. 
+This program is a social media API created in Python which uses FastAPI. The front end shown below is provided by FastAPI. 
 This API has nine seperate functions under four categories: Users, Authentication, Posts, Vote.
 More than 30 unit and integration tests are used to ensure funtionality of this API.
 
